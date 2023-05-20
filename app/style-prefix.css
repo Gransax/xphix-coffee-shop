@@ -1,0 +1,66 @@
+/*=================================== 
+#GOOGLE FONTS 
+===================================*/
+
+/*=================================== 
+#CSS VARIABLES
+===================================*/
+
+:root {
+  --header-height: ;
+
+  /*===============
+   * Colors
+  ===============*/
+
+  --first-color: ;
+  --first-color-light: ;
+  --title-color: ;
+  --text-color: ;
+  --bg-color: ;
+  --container-color: ;
+  --hsla: ;
+
+  /*===============
+   * Typography
+  ===============*/
+
+  --body-font: ;
+  --second-font: ;
+
+  --biggest-font-size: ;
+  --bigger-font-size: ;
+  --big-font-size: ;
+  --h1-font-size: ;
+  --h2-font-size: ;
+  --h3-font-size: ;
+  --largest-font-size: ;
+  --larger-font-size: ;
+  --large-font-size: ;
+  --normal-font-size: ;
+
+  --weight-400: ;
+  --weight-500: ;
+  --weight-600: ;
+  --weight-700: ;
+
+  /*===============
+   * Border-radius
+  ===============*/
+
+  --radius: ;
+
+  /*===============
+   * Transition
+  ===============*/
+
+  --transition: ;
+}
+
+/*=================================== 
+#RESET
+===================================*/
+
+/*=================================== 
+#RESUABLE CSS CLASSES
+===================================*/
