@@ -8,13 +8,13 @@ import { useRouter } from "next/navigation";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Popover, Transition } from "@headlessui/react";
 import Logo from "./Logo";
+import useNavigation from "../hooks/useNavigation";
 type Props = {};
 
 const Navbar = (props: Props) => {
   const [onTop, setOnTop] = useState(true);
-  const [selected, setSelected] = useState(links[0].name);
   const router = useRouter();
-
+  const { active, set } = useNavigation();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY >= 70) {
@@ -40,10 +40,10 @@ const Navbar = (props: Props) => {
         <div className="lg:flex items-center justify-center gap-8 text-md font-medium hidden">
           {links.map((link) => (
             <a
-              onClick={() => setSelected(link.name)}
+              onClick={() => set(link.path)}
               className={`
                 hover:text-primary transition duration-300 text-md
-                ${link.name === selected ? "text-primary" : "text-white"}
+                ${link.path === active ? "text-primary" : "text-white"}
               `}
               key={link.name}
               href={`#${link.path}`}
@@ -117,7 +117,7 @@ const Navbar = (props: Props) => {
                       >
                         {links.map((link) => (
                           <Link
-                            onClick={() => setSelected(link.name)}
+                            onClick={() => set(link.path)}
                             className={`
                             -m-3 
                             flex 
@@ -143,7 +143,7 @@ const Navbar = (props: Props) => {
                               <span
                                 className={`text-md font-medium  
                                 ${
-                                  link.name === selected
+                                  link.path === active
                                     ? "text-primary"
                                     : "text-black"
                                 }`}

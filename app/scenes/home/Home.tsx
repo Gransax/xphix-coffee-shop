@@ -3,12 +3,20 @@
 import Button from "@/app/components/Button";
 import React from "react";
 import { secondFont } from "@/app/font";
+import { motion } from "framer-motion";
+import useNavigation from "@/app/hooks/useNavigation";
 
 type Props = {};
 
 const Home = (props: Props) => {
+  const { set } = useNavigation();
+
   return (
-    <div className="w-full h-screen bg-home pt-44 md:p-0" id="home">
+    <motion.div
+      onViewportEnter={() => set("home")}
+      className="w-full h-screen bg-home pt-44 md:p-0"
+      id="home"
+    >
       <div className="w-5/6 m-auto flex items-center justify-start h-full">
         <div className="flex flex-col items-start justify-start gap-8 w-full xl:w-2/3 2xl:w-1/2">
           <h3
@@ -32,7 +40,7 @@ const Home = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
