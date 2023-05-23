@@ -4,17 +4,23 @@ import Image from "next/image";
 import { GoCheck } from "react-icons/go";
 import Header from "@/app/components/Header";
 import SubHeader from "@/app/components/SubHeader";
+import Section from "@/app/components/Section";
 
 type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <div className="w-full h-screen bg-bg-color">
+    <Section>
       <div className="w-5/6 m-auto flex items-center justify-start h-full">
-        <div className="flex items-center justify-start h-full">
-          <div className="flex-1 ">
-            <div className="relative aspect-square z-10 w-5/6 h-[600px] ml-8 ">
-              <div className="absolute -left-8 -bottom-8 bg-primary w-full h-[610px]" />
+        <div
+          className="
+            flex flex-col xl:flex-row gap-24 xl:gap-8 items-start justify-center
+            xl:items-center xl:justify-start h-full
+          "
+        >
+          <div className="flex-1">
+            <div className="relative aspect-square z-10 lg:w-5/6 h-[400px] md:h-[600px]  ml-8">
+              <div className="absolute -left-8 -bottom-8 bg-primary w-full h-[410px] md:h-[610px] " />
               <Image alt="about" src="/images/about-img.jpg" fill />
             </div>
           </div>
@@ -52,7 +58,7 @@ const AboutUs = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 

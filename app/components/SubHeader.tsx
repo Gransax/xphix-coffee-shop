@@ -9,7 +9,7 @@ type Props = {
 const SubHeader = ({ children }: Props) => {
   return (
     <h2
-      className={`text-5xl font-medium text-title-color ${secondFont.className}`}
+      className={`text-4xl md:text-5xl font-medium text-title-color ${secondFont.className}`}
     >
       {children}
     </h2>

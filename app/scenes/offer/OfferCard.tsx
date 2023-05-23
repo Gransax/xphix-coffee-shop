@@ -12,7 +12,7 @@ type Props = {
 
 const OfferCard = ({ img, title, discount, description }: Props) => {
   return (
-    <div className="relative w-full flex justify-between items-center ">
+    <div className="w-full flex flex-col xl:flex-row xl:justify-between xl:items-center ">
       <Image
         alt="offer-img"
         src={img}
@@ -20,7 +20,7 @@ const OfferCard = ({ img, title, discount, description }: Props) => {
         height={1000}
         className="rounded-lg flex-[5] "
       />
-      <div className="flex-[3] flex items-center justify-end -ml-32">
+      <div className="flex-[3] flex items-center justify-end -mt-8 md:mt-16 xl:mt-0 xl:-ml-32">
         <div className=" bg-container-bg-color p-3 rounded-xl  z-10 h-5/6">
           <div className="rounded-lg border-[2px] border-dashed border-primary px-8 py-16 flex flex-col justify-center gap-8 h-full">
             <span className={`text-3xl text-white ${secondFont.className}`}>

@@ -23,7 +23,9 @@ const MenuCard = ({ title, img, price, description }: Props) => {
             />
           </div>
           <div className="flex flex-col gap-2 items-start justify-center">
-            <span className={` text-primary text-2xl ${secondFont.className}`}>
+            <span
+              className={` text-primary text-2xl lg:text-xl xl:text-2xl ${secondFont.className}`}
+            >
               {title}
             </span>
             <span className={` text-text-color font-medium`}>
@@ -33,7 +35,12 @@ const MenuCard = ({ title, img, price, description }: Props) => {
         </div>
 
         <div>
-          <span className="pl-8 pr-3 h-fit border-l-[2px] border-dashed border-primary text-primary text-2xl font-semibold">
+          <span
+            className="
+                pl-8 lg:pl-4 xl:pl-8 pr-3 lg:pr-1 xl:pr-3 h-fit border-l-[2px] 
+                border-dashed border-primary text-primary text-2xl lg:text-xl xl:text-2xl font-semibold
+              "
+          >
             ${price}
           </span>
         </div>

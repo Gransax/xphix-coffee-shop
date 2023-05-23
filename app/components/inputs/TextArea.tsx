@@ -20,7 +20,7 @@ const TextArea = ({ placeholder, className }: Props) => {
         focus:outline-none
         focus:ring-2
         ${className}
-        `}
+      `}
     />
   );
 };

@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
     >
       <div className="m-auto w-11/12 lg:w-5/6 py-4 flex items-center justify-between gap-4 lg:gap-0 ">
         <Logo />
-        <div className="md:flex items-center justify-center gap-8 text-md font-medium hidden">
+        <div className="lg:flex items-center justify-center gap-8 text-md font-medium hidden">
           {links.map((link) => (
             <Link
               onClick={() => setSelected(link.name)}
@@ -59,7 +59,7 @@ const Navbar = (props: Props) => {
             flex-col 
             items-start 
             justify-center 
-            md:hidden
+            lg:hidden
             "
         >
           <Popover className="relative">

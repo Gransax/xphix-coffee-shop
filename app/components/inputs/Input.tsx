@@ -21,7 +21,7 @@ const Input = ({ placeholder, secondary }: Props) => {
         focus:border-[2px]
         ${
           secondary
-            ? "border-[2px] border-white"
+            ? "border-[2px] border-white focus:border-primary"
             : "border-[1px] border-primary"
         }
       `}

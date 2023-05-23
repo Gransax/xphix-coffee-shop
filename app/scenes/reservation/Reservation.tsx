@@ -32,14 +32,17 @@ const Reservation = (props: Props) => {
             <SubHeader> Book A Table </SubHeader>
           </div>
           <div className="w-full flex flex-col items-center justify-center gap-8">
-            <form className="grid grid-cols-3 gap-8 w-full">
+            <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
               <Input placeholder="Your Name" />
               <Input placeholder="Email Address" />
               <Input placeholder="Your Phone" />
               <Input placeholder="Data Ex DD/MM/YY" />
               <Input placeholder="Time Ex 01:25PM" />
               <Input placeholder="Number Of People" />
-              <TextArea className="col-span-3" placeholder="Your Message" />
+              <TextArea
+                className="col-span-1 sm:col-span-2 lg:col-span-3"
+                placeholder="Your Message"
+              />
             </form>
             <Button>
               <div className="flex items-center justify-center text-center gap-2">

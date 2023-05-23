@@ -22,7 +22,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <div className=" text-lg w-full flex flex-col items-start justify-center gap-24 bg-black mt-16 pt-16">
-      <div className="w-5/6 m-auto flex gap-12 ">
+      <div className="w-5/6 m-auto flex flex-col xl:flex-row gap-12">
         {/* Logo */}
         <div className="flex-[2] flex flex-col items-start justify-start gap-6">
           <Logo />
@@ -113,7 +113,7 @@ const Footer = (props: Props) => {
       <div
         className="
             flex items-center justify-center gap-1
-            p-4 w-full text-center border-t-[2px] border-stone-700/60 border-dashed 
+            p-4 w-full text-center border-t-[2px] border-secondary/70 border-dashed 
             font-medium text-lg text-text-color
         "
       >

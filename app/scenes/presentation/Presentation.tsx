@@ -12,15 +12,15 @@ type Props = {};
 const Presentation = (props: Props) => {
   return (
     <div className="w-full bg-bg-color pt-24">
-      <div className="w-full h-[100vh] ">
-        <div className="w-5/6 m-auto flex items-center justify-between h-full">
+      <div className="w-full xl:h-[100vh]">
+        <div className="w-5/6 m-auto flex flex-col lg:flex-row items-center justify-between gap-8 h-full">
           {/* Content */}
-          <div className="flex-1 flex flex-col items-start justify-start gap-4 text-text-color">
+          <div className="flex-[1] flex flex-col items-start justify-start gap-4 text-text-color">
             <Header>Why Choose Us</Header>
             <SubHeader>
               Coffero Most Out Of Your Favorite & Tasty Coffee House
             </SubHeader>
-            <p className="leading-7 my-8 text-justify">
+            <p className="leading-7 my-8 text-justify text-sm xl:text-base">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id
               at esse quisquam animi sapiente accusantium, modi reprehenderit ab
               illum cum consequatur maxime ullam vel, cumque nisi voluptatem
@@ -65,7 +65,7 @@ const Presentation = (props: Props) => {
             </div>
           </div>
           {/* Image */}
-          <div className="flex-1 flex justify-end">
+          <div className="flex-[1] flex justify-end">
             <Image
               src="/images/choose.jpg"
               alt="cho0se-img"

@@ -4,6 +4,7 @@ import SubHeader from "@/app/components/SubHeader";
 import { testimonials } from "@/app/data";
 import TestimonialCard from "./TestimonialCard";
 import Slider from "react-slick";
+import Section from "@/app/components/Section";
 
 var settings = {
   dots: true,
@@ -18,15 +19,15 @@ type Props = {};
 
 const Testimonials = (props: Props) => {
   return (
-    <div className="w-full  bg-bg-color py-24" id="testimonials">
+    <Section screenSize={false}>
       <div className="w-5/6 m-auto flex items-center justify-center h-full">
         <div className="flex flex-col items-center justify-center gap-12 w-full">
           <div className="flex flex-col items-center justify-center text-center w-full gap-2">
-            <Header> Testimonials </Header>
-            <SubHeader> What Client Say&apos;s </SubHeader>
+            <Header>Testimonials</Header>
+            <SubHeader>What Client Say&apos;s</SubHeader>
           </div>
 
-          <div className="grid grid-cols-3 items-center justify-center gap-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 items-center justify-center gap-8 w-full">
             {testimonials.map(({ id, img, title, service, description }) => (
               <TestimonialCard
                 key={`testimonial-${id}`}
@@ -39,7 +40,7 @@ const Testimonials = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
