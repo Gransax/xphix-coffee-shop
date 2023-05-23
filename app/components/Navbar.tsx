@@ -39,7 +39,7 @@ const Navbar = (props: Props) => {
         <Logo />
         <div className="lg:flex items-center justify-center gap-8 text-md font-medium hidden">
           {links.map((link) => (
-            <Link
+            <a
               onClick={() => setSelected(link.name)}
               className={`
                 hover:text-primary transition duration-300 text-md
@@ -49,7 +49,7 @@ const Navbar = (props: Props) => {
               href={`#${link.path}`}
             >
               {link.name}
-            </Link>
+            </a>
           ))}
         </div>
         {/* Mobile */}

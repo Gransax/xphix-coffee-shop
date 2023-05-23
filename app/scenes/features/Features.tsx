@@ -9,7 +9,7 @@ type Props = {};
 
 const Features = (props: Props) => {
   return (
-    <Section>
+    <Section name="features">
       <div className="w-5/6 m-auto flex items-center justify-center h-full">
         <div className="flex flex-col items-center justify-center gap-12">
           <div className="flex flex-col items-center justify-center text-center w-full gap-2">

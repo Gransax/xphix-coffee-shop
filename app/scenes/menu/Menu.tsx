@@ -11,7 +11,7 @@ type Props = {};
 
 const Menu = (props: Props) => {
   return (
-    <Section transparent>
+    <Section name="menu" transparent>
       <div className="w-5/6 m-auto flex items-center justify-center h-full">
         <div className="flex flex-col items-center justify-center gap-12 w-full">
           <div className="flex flex-col items-center justify-center text-center w-full gap-2">

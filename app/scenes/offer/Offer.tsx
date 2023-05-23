@@ -5,6 +5,7 @@ import { offer as offers } from "@/app/data";
 import React, { useState } from "react";
 import OfferCard from "./OfferCard";
 import Slider from "react-slick";
+import Section from "@/app/components/Section";
 
 type Props = {};
 
@@ -22,7 +23,7 @@ const Offer = (props: Props) => {
   };
 
   return (
-    <div className="w-full py-32 bg-bg-transparent">
+    <Section name="offers" transparent>
       <div className="w-5/6 m-auto ">
         <div className="flex flex-col items-center justify-center text-center w-full gap-2">
           <Header> Offer </Header>
@@ -40,7 +41,7 @@ const Offer = (props: Props) => {
           ))}
         </Slider>
       </div>
-    </div>
+    </Section>
   );
 };
 

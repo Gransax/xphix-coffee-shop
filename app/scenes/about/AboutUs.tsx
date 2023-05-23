@@ -10,7 +10,7 @@ type Props = {};
 
 const AboutUs = (props: Props) => {
   return (
-    <Section>
+    <Section name="about">
       <div className="w-5/6 m-auto flex items-center justify-start h-full">
         <div
           className="
